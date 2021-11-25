@@ -1,0 +1,24 @@
+
+@keyframes change {
+  0% {
+    border-radius: 0%;
+  }
+  100% {
+    border-radius: 50%;
+  }
+}
+#app3 .square{
+  border: 1px solid grey;
+  margin-top: 10vw;
+  margin-left: 10vw;
+  width: 10vw;
+  height: 10vw;
+  transition: transform 2s;
+}
+#app3 .square.active{
+  transform:translateX(15vw);
+  animation: change 2s ;
+  animation-fill-mode: forwards;
+
+}
+
